@@ -9,6 +9,7 @@ import Registration from './pages/registration/Registration';
 import AgentDashboard from './pages/agent/AgentDashboard';
 import UserLanding from './pages/user/UserLanding';
 import AdminDashboard from './pages/admin/AdminDashboard';
+import HomePage from './pages/home/HomePage';
 
 const router = createBrowserRouter([
 	{
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
 		element: <Root />,
 		errorElement: <ErrorPage />,
 		children: [
+			{
+				path: "/",
+				element: <HomePage />,
+			},
 			{
 				path: "login",
 				element: <Login />,
